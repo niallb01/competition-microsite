@@ -10,13 +10,13 @@ const AgeGate = (props) => {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    console.log("input change");
+    // console.log("input change");
     setUserAge(e.target.value);
   };
 
   // get user age by subtracting birth year(receives userAge) from current year
   const handleSubmit = (e) => {
-    console.log("submit");
+    // console.log("submit");
     e.preventDefault();
     const currentYear = new Date().getFullYear();
     const birthYear = new Date(userAge).getFullYear();
@@ -42,7 +42,9 @@ const AgeGate = (props) => {
           <RiBeerLine className="beer-icon" />
           Welcome!
         </h1>
-        <p>Please enter your DOB, you must be over 18 to enter!</p>
+        <p className="dob-text">
+          Please enter your DOB, you must be over 18 to enter!
+        </p>
         <form onSubmit={handleSubmit}>
           <label htmlFor="dob">
             <input

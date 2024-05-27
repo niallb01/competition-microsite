@@ -98,6 +98,7 @@ const Form = () => {
             name="firstName"
             value={userData.firstName}
             onChange={handleChange}
+            placeholder="Enter first name"
             required
           />
 
