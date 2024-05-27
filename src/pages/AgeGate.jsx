@@ -39,7 +39,7 @@ const AgeGate = (props) => {
       <ToastContainer limit={1} />
       <div className="age-gate-container">
         <h1 className="age-gate-header">
-          <RiBeerLine className="beer-icon" />
+          <RiBeerLine className="beer-icon" size={60} />
           Welcome!
         </h1>
         <p className="dob-text">

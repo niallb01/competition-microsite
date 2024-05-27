@@ -57,14 +57,35 @@ h1 {
   background-color: #242124;
 }
 
-.dob-text {
+.age-gate-header {
+  display: flex;
+  align-items: center;
+}
+
+.dob-text,
+.home-text {
   font-size: 16px;
 }
 
-/* input[type="date"] {
+.home-header {
+  display: flex;
+  align-items: center;
+}
 
-  color: #883031;
-} */
+.home-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
 
 .Toastify__toast-container--top-center {
   --toastify-toast-width: 370px;

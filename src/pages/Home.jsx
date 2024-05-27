@@ -1,20 +1,16 @@
-import { CiBeerMugFull } from "react-icons/ci";
+import { RiBeerLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import beer_png from "../images/beer.png";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <img
-        className="beer-img"
-        src={beer_png}
-        alt="beer"
-        width="400"
-        height="300"
-      />
-      <h1>Win a free pint</h1>
-      <p>
-        Please follow link below to add details and a valid 6 digit entry code
+      <div className="home-header">
+        <RiBeerLine className="beer-icon" size={60} />
+        <h1>Win a free pint</h1>
+      </div>
+      <p className="home-text">
+        Click below to add details and a valid 6 digit entry code
       </p>
       <Link to="/form">
         <button>Enter</button>

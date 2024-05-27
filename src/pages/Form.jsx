@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 //
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
+import "../styles/Form.css";
 
 const Form = () => {
   const [termsAndConditions, setTermsAndConditions] = useState(false);
