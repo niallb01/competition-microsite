@@ -5,8 +5,8 @@ const NoWin = () => {
     <div className="no-win-container">
       <h1>Sorry!</h1>
       <p>Unfortunately you didn't win this time</p>
-      <Link to="/home">
-        <button>Home</button>
+      <Link to="/thankyou">
+        <button>Leave</button>
       </Link>
     </div>
   );

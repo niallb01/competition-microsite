@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+//
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 const Form = () => {
   const [termsAndConditions, setTermsAndConditions] = useState(false);
@@ -18,6 +21,10 @@ const Form = () => {
 
   const handleTerms = () => {
     setTermsAndConditions(!termsAndConditions);
+  };
+
+  const handlePhone = (value) => {
+    setUserData({ ...userData, phone: value });
   };
 
   // we need an on submit for form and onchange for inputs to add user data to state
@@ -49,14 +56,23 @@ const Form = () => {
       return;
     }
     // if user doesn't enter 10 digit phone number
-    if (!/^\d{11}$/.test(userData.phone)) {
-      toast.error("Please enter a valid phone number.", {
-        position: "top-center",
-        autoClose: false,
-        closeOnClick: true,
-      });
-      return;
-    }
+    // if (!/^\d{11}$/.test(userData.phone)) {
+    //   toast.error("Please enter a valid phone number.", {
+    //     position: "top-center",
+    //     autoClose: false,
+    //     closeOnClick: true,
+    //   });
+    //   return;
+    // }
+
+    // if (!userData.phone || userData.phone.length < 10) {
+    //   toast.error("Please enter a valid phone number.", {
+    //     position: "top-center",
+    //     autoClose: false,
+    //     closeOnClick: true,
+    //   });
+    //   return;
+    // }
 
     // if user enters correct data
     const isWinner = Math.random() < 0.2; // 20% chance to win
@@ -105,13 +121,23 @@ const Form = () => {
             required
           />
 
-          <label htmlFor="phone">Phone:</label>
+          {/* <label htmlFor="phone">Phone:</label>
           <input
             type="tel"
             id="phone"
             name="phone"
             value={userData.phone}
             onChange={handleChange}
+            required
+          /> */}
+
+          <label htmlFor="phone">Phone:</label>
+          <PhoneInput
+            // placeholder="Enter phone number"
+            value={userData.phone}
+            onChange={handlePhone}
+            name="phone"
+            id="phone"
             required
           />
 

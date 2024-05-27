@@ -17,7 +17,7 @@ const App = () => {
   // user age must be verifed to access routes
   return (
     <Routes>
-      <Route path="/" element={<AgeGate setVerifyAge={setVerifyAge} />}></Route>
+      {/* <Route path="/" element={<AgeGate setVerifyAge={setVerifyAge} />}></Route>
       <Route
         path="/home"
         element={verifyAge ? <Home /> : <Navigate to="/" replace />}
@@ -37,7 +37,17 @@ const App = () => {
       <Route
         path="/thankyou"
         element={verifyAge ? <ThankYou /> : <Navigate to="/" replace />}
+      ></Route> */}
+
+      <Route path="/" element={<AgeGate setVerifyAge={setVerifyAge} />}></Route>
+      <Route
+        path="/home"
+        element={verifyAge ? <Home /> : <Navigate to="/" replace />}
       ></Route>
+      <Route path="/form" element={<Form />}></Route>
+      <Route path="/winner" element={<Winner />}></Route>
+      <Route path="/nowin" element={<NoWin />}></Route>
+      <Route path="/thankyou" element={<ThankYou />}></Route>
     </Routes>
   );
 };
