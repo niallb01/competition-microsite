@@ -1,6 +1,5 @@
 import { RiBeerLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import beer_png from "../images/beer.png";
 
 const Home = () => {
   return (
@@ -13,7 +12,7 @@ const Home = () => {
         Click below to add details and a valid 6 digit entry code
       </p>
       <Link to="/form">
-        <button>Enter</button>
+        <button className="enter-btn">Enter</button>
       </Link>
     </div>
   );

@@ -9,7 +9,7 @@ import "../styles/Form.css";
 
 const Form = () => {
   const [termsAndConditions, setTermsAndConditions] = useState(false);
-  // need to create user object
+  // create user object to store data
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -56,24 +56,16 @@ const Form = () => {
       });
       return;
     }
-    // if user doesn't enter 10 digit phone number
-    // if (!/^\d{11}$/.test(userData.phone)) {
-    //   toast.error("Please enter a valid phone number.", {
-    //     position: "top-center",
-    //     autoClose: false,
-    //     closeOnClick: true,
-    //   });
-    //   return;
-    // }
 
-    // if (!userData.phone || userData.phone.length < 10) {
-    //   toast.error("Please enter a valid phone number.", {
-    //     position: "top-center",
-    //     autoClose: false,
-    //     closeOnClick: true,
-    //   });
-    //   return;
-    // }
+    // check user enters phone number
+    if (!userData.phone || userData.phone.length < 10) {
+      toast.error("Please enter a valid phone number.", {
+        position: "top-center",
+        autoClose: false,
+        closeOnClick: true,
+      });
+      return;
+    }
 
     // if user enters correct data
     const isWinner = Math.random() < 0.2; // 20% chance to win
@@ -97,9 +89,9 @@ const Form = () => {
             type="text"
             id="firstName"
             name="firstName"
+            className="form-text-input"
             value={userData.firstName}
             onChange={handleChange}
-            placeholder="Enter first name"
             required
           />
 
@@ -108,6 +100,7 @@ const Form = () => {
             type="text"
             id="lastName"
             name="lastName"
+            className="form-text-input"
             value={userData.lastName}
             onChange={handleChange}
             required
@@ -118,24 +111,14 @@ const Form = () => {
             type="email"
             id="email"
             name="email"
+            className="form-text-input"
             value={userData.email}
             onChange={handleChange}
             required
           />
 
-          {/* <label htmlFor="phone">Phone:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={userData.phone}
-            onChange={handleChange}
-            required
-          /> */}
-
           <label htmlFor="phone">Phone:</label>
           <PhoneInput
-            // placeholder="Enter phone number"
             value={userData.phone}
             onChange={handlePhone}
             name="phone"
@@ -148,6 +131,7 @@ const Form = () => {
             type="text"
             id="entryCode"
             name="entryCode"
+            className="form-text-input"
             value={userData.entryCode}
             onChange={handleChange}
             maxLength="6"
@@ -157,13 +141,15 @@ const Form = () => {
           <button type="submit" id="submit" name="submit" className="enter-btn">
             Enter
           </button>
-          <label htmlFor="terms">I agree to terms and conditions</label>
-          <input
-            onClick={handleTerms}
-            type="checkbox"
-            id="terms"
-            name="terms"
-          />
+          <div className="terms-container">
+            <label htmlFor="terms">I agree to terms and conditions</label>
+            <input
+              onClick={handleTerms}
+              type="checkbox"
+              id="terms"
+              name="terms"
+            />
+          </div>
         </form>
       </div>
     </>
