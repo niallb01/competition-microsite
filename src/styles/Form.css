@@ -36,10 +36,14 @@ body {
 }
 
 .form-container form {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; */
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
 }
 
 .form-group {
@@ -71,16 +75,21 @@ body {
 .form-text-input {
   width: 300px;
   height: 30px;
+  background: #fff;
+  border-radius: 4px;
 }
 
 .PhoneInputInput {
   width: 265px;
   height: 30px;
+  background: #fff;
+  border-radius: 4px;
 }
 
 .form-group input[type="checkbox"] {
   margin-left: 10px;
   width: auto;
+  color: #fff;
 }
 
 .enter-btn {
@@ -93,6 +102,10 @@ body {
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.3s ease;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .enter-btn:hover {
