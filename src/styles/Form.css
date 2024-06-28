@@ -135,3 +135,18 @@ body {
   --toastify-text-color-dark: #fff;
   --toastify-setMaxToast: limit(1);
 }
+
+@media (max-width: 600px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+  }
+}

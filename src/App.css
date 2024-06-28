@@ -132,3 +132,52 @@ button {
 .enter-btn:hover {
   background-color: #681424;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images/bar.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+  }
+  .age-gate-container,
+  .home-container,
+  .no-win-container,
+  .winner-container,
+  .thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+  }
+}
