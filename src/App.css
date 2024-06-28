@@ -50,6 +50,12 @@ body {
 
 .age-gate-header {
   margin-bottom: 10px;
+  font-size: 45px;
+}
+
+.dob-text,
+.home-text {
+  font-size: 22px;
 }
 
 .date-input {
@@ -89,6 +95,7 @@ button {
 .thank-you-container h1 {
   color: #333;
   margin-bottom: 10px;
+  font-size: 45px;
 }
 
 .no-win-container p,
@@ -96,6 +103,7 @@ button {
 .thank-you-container p {
   color: #333;
   margin-bottom: 20px;
+  font-size: 22px;
 }
 
 .no-win-container button,
