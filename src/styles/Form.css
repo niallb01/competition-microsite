@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: "quicksand", sans-serif;
-  /* background: #fdf5d6; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +23,6 @@ body {
 }
 
 .form-container h1 {
-  font-size: 2rem;
   margin-bottom: 20px;
   color: #333;
 }
@@ -36,14 +34,10 @@ body {
 }
 
 .form-container form {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%; */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 20px;
 }
 
 .form-group {
@@ -81,7 +75,7 @@ body {
 }
 
 .PhoneInputInput {
-  width: 265px;
+  width: 250px;
   height: 35px;
   background: #fff;
   border-radius: 4px;
@@ -95,8 +89,6 @@ body {
 }
 
 .enter-btn {
-  padding: 15px 30px;
-  font-size: 1.2rem;
   color: #fff;
   background-color: #883031;
   border: none;
@@ -104,10 +96,10 @@ body {
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.3s ease;
-
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .enter-btn:hover {
@@ -127,4 +119,19 @@ body {
 
 .terms-container input[type="checkbox"] {
   margin-left: 10px;
+}
+
+.Toastify__toast-body > div:last-child {
+  font-size: 14px;
+}
+
+.Toastify__toast-container--top-center {
+  --toastify-toast-width: 370px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 80px;
+  --toastify-toast-max-height: 100px;
+  --toastify-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+  --toastify-setMaxToast: limit(1);
 }

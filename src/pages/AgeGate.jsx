@@ -1,4 +1,3 @@
-import { RiBeerLine } from "react-icons/ri";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ToastContainer, toast } from "react-toastify";
@@ -38,10 +37,7 @@ const AgeGate = (props) => {
     <>
       <ToastContainer limit={1} />
       <div className="age-gate-container">
-        <h1 className="age-gate-header">
-          <RiBeerLine className="beer-icon" size={60} />
-          Welcome!
-        </h1>
+        <h1 className="age-gate-header">Welcome!</h1>
         <p className="dob-text">
           Please enter your DOB, you must be over 18 to enter!
         </p>

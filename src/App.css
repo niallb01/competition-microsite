@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 body,
 html {
@@ -7,25 +7,20 @@ html {
 }
 
 body {
-  font-family: "quicksand", sans-serif;
-  font-size: 0.875rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-size: 20px;
   color: #1b1b1b;
-
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
-  background-image: url("images/pint.jpg");
+  background-image: url("images/bar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 100vh;
-}
-
-h1 {
-  color: #883031;
 }
 
 .age-gate-container,
@@ -40,17 +35,11 @@ h1 {
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 100%;
-}
-
-.beer-icon {
-  color: #2a5346;
-  font-size: 2.5rem;
-  vertical-align: middle;
-  margin-right: 0.5rem;
 }
 
 .age-gate-header,
@@ -68,24 +57,24 @@ h1 {
   height: 30px;
 }
 
+button {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
 .age-gate-btn,
 .enter-btn {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
   cursor: pointer;
   color: #fff;
-  background-color: #883031;
-}
-
-.age-gate-btn:hover,
-.enter-btn:hover {
-  background-color: #242124;
-}
-
-.dob-text,
-.home-text {
+  background-color: #761b28;
   font-size: 18px;
-  color: #1b1b1b;
 }
 
 .text-container {
@@ -98,7 +87,6 @@ h1 {
 .no-win-container h1,
 .winner-container h1,
 .thank-you-container h1 {
-  font-size: 2rem;
   color: #333;
   margin-bottom: 10px;
 }
@@ -106,7 +94,6 @@ h1 {
 .no-win-container p,
 .winner-container p,
 .thank-you-container p {
-  font-size: 1rem;
   color: #333;
   margin-bottom: 20px;
 }
@@ -114,17 +101,13 @@ h1 {
 .no-win-container button,
 .winner-container button,
 .thank-you-container button {
-  padding: 10px 20px;
-  font-size: 1rem;
   color: #fff;
+  background-color: #761b28;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.no-win-container button:hover {
-  background-color: #761b28;
+  font-size: 18px;
 }
 
 .winner-container button {
@@ -135,89 +118,9 @@ h1 {
   background-color: #218838;
 }
 
-.thank-you-container button {
-  background-color: #883031;
-}
-
-.thank-you-container button:hover {
-  background-color: #242124;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .beer-icon {
-    font-size: 2rem;
-  }
-
-  .age-gate-btn,
-  .enter-btn {
-    font-size: 0.875rem;
-  }
-
-  .dob-text,
-  .home-text {
-    font-size: 16px;
-  }
-
-  .no-win-container h1,
-  .winner-container h1,
-  .thank-you-container h1 {
-    font-size: 1.75rem;
-  }
-
-  .no-win-container p,
-  .winner-container p,
-  .thank-you-container p {
-    font-size: 0.875rem;
-  }
-
-  .no-win-container button,
-  .winner-container button,
-  .thank-you-container button {
-    padding: 8px 16px;
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 400px) {
-  h1 {
-    font-size: 1.25rem;
-  }
-
-  .beer-icon {
-    font-size: 1.5rem;
-  }
-
-  .age-gate-btn,
-  .enter-btn {
-    font-size: 0.75rem;
-    padding: 0.5rem;
-  }
-
-  .dob-text,
-  .home-text {
-    font-size: 14px;
-  }
-
-  .no-win-container h1,
-  .winner-container h1,
-  .thank-you-container h1 {
-    font-size: 1.5rem;
-  }
-
-  .no-win-container p,
-  .winner-container p,
-  .thank-you-container p {
-    font-size: 0.75rem;
-  }
-
-  .no-win-container button,
-  .winner-container button,
-  .thank-you-container button {
-    padding: 6px 12px;
-    font-size: 0.75rem;
-  }
+.thank-you-container button:hover,
+.no-win-container button:hover,
+.age-gate-btn:hover,
+.enter-btn:hover {
+  background-color: #681424;
 }
