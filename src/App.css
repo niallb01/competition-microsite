@@ -10,16 +10,16 @@ body {
   font-family: "quicksand", sans-serif;
   font-size: 0.875rem;
   color: #1b1b1b;
-  /* background: #fdf5d6; */
+
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 
-  background-image: url("images/bar.jpg");
-  background-size: cover; /* or 'contain', 'auto', or specific dimensions */
-  background-repeat: no-repeat; /* prevents the image from repeating */
-  background-position: center; /* centers the image */
+  background-image: url("images/pint.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
@@ -136,20 +136,14 @@ h1 {
 }
 
 .thank-you-container button {
-  background-color: #007bff;
+  background-color: #883031;
 }
 
 .thank-you-container button:hover {
-  background-color: #0056b3;
+  background-color: #242124;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    font-size: 0.75rem;
-    padding: 10px;
-  }
-
   h1 {
     font-size: 1.5rem;
   }
@@ -188,11 +182,7 @@ h1 {
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 0.625rem;
-  }
-
+@media (max-width: 400px) {
   h1 {
     font-size: 1.25rem;
   }
